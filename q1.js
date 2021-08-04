@@ -22,6 +22,7 @@ q1.appendChild(lista)
 
 
 let button = document.getElementById('button');
+
 button.addEventListener('click', function () { multiplosDeDoisETres() });
 
 
