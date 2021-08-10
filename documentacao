@@ -1,3 +1,7 @@
+Comentando e descomentando todo bloco de codigo 
+	
+	Ctl + k + c = comenta | ctl + k + u = descomenta
+
 referenciando o documento HTML manipulado
 
     let q1 = document.getElementById('q1');	

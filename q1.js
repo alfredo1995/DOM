@@ -3,23 +3,20 @@ let q1 = document.getElementById('q1');									   // referenciando o documento 
 let inputMinimo = document.createElement("input");				           // criando elemento <input></input>
 let inputMaximo = document.createElement("input");
 let botao = document.createElement("button");
-let lista = document.createElement("ul");
 
 inputMinimo.setAttribute("id", "minimo")							       // setando atributo do elemento <input id="id" name="CaixaTexto"></input>
 inputMaximo.setAttribute("id", "maximo")
-inputMinimo.setAttribute("id", "minimo")
+inputMinimo.setAttribute("type", "number")
 inputMaximo.setAttribute("type", "number")
 inputMinimo.setAttribute("placeholder", "Valor mínimo")
 inputMaximo.setAttribute("placeholder", "Valor máximo")
 botao.setAttribute("id", 'button')
 botao.innerHTML = "Calcular";
 botao.setAttribute("type", "submit")
-lista.setAttribute("id", "ul")
 
 q1.appendChild(inputMinimo)											        // recebendo os elementos como parametro para instaciar na tela
 q1.appendChild(inputMaximo)
 q1.appendChild(botao)
-q1.appendChild(lista)
 
 
 let button = document.getElementById('button');								// manipulando o elemento	

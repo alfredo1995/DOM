@@ -23,7 +23,7 @@ function fatorial() {                                               // function 
     let fatorial = document.getElementById('CaixaTexto').value;
     let inicio = new Date().getTime();
  
-    let fat = document.getElementById('fatorial');s
+    let fat = document.getElementById('fatorial');
     
     let result = 1;
     //logica para verificar o calculo
