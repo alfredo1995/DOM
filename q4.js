@@ -1,6 +1,6 @@
-let q4 = document.getElementById('q4');                                       // referenciando o documento HTML manipulado
+let q4 = document.getElementById('q4');                                      // referenciando o documento HTML manipulado
 
-let CaixaTexto2 = document.createElement("input");                            //   criar elemento <input></input>
+let CaixaTexto2 = document.createElement("input");                           // criar elemento <input></input>
 let CaixaTexto22 = document.createElement("input");  
 let quantidade = document.createElement("input");
 let botao4 = document.createElement("button");
@@ -18,16 +18,16 @@ botao4.setAttribute("id", 'button')
 botao4.innerHTML = "Calcular";
 botao4.setAttribute("type", "submit")
 
-q4.appendChild(CaixaTexto2)                                                 
+q4.appendChild(CaixaTexto2)                                                  // recebendo os elementos como parametro para instaciar na tela     
 q4.appendChild(CaixaTexto22)
 q4.appendChild(quantidade) 
 q4.appendChild(botao)
 
-let button4 = document.getElementById('button');                   
+let button4 = document.getElementById('button');                             // manipulando o elemento
 
-button4.addEventListener('click', function () { criarArray() });      
+button4.addEventListener('click', function () { criarArray() });             // ao clicar no elemnto aciona a função   
 
-function criarArray(){
+function criarArray(){                                                       // function acionada ao clicar no button2.addEventListener
 	let qtd = Number(document.getElementById('qtd').value);
 	let minimo = Number(document.getElementById('min').value);
 	let maximo = Number(document.getElementById('max').value);
