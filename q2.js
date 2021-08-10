@@ -2,15 +2,17 @@ let q2 = document.getElementById('q2');                             // referenci
  
 let CaixaTexto = document.createElement("input");                   // criando elemento <input></input>
 let botao2 = document.createElement("button"); 
+let resultado = document.createElement("p")
  
-CaixaTexto.setAttribute("id", "CaixaTexto")                         //  atributo do elemento <input id="id" name="CaixaTexto"></input>
-CaixaTexto.setAttribute("type", "number")                           //  atributo do elemento <input type="number" id="id" name="CaixaTexto"/>></input>
+CaixaTexto.setAttribute("id", "CaixaTexto")                         // atributo do elemento <input id="id" name="CaixaTexto"></input>
+CaixaTexto.setAttribute("type", "number")                           // atributo do elemento <input type="number" id="id" name="CaixaTexto"/>></input>
 botao2.setAttribute("id", 'button')
 botao2.innerHTML = "Calcular";
 botao2.setAttribute("type", "submit")  
     
 q2.appendChild(CaixaTexto)                                          // recebendo os elementos como parametro para instaciar na tela
 q2.appendChild(botao2)
+q2.appendChild(resultado)
  
 let button2 = document.getElementById('button');                    // manipulando o elemento
 
@@ -21,16 +23,16 @@ function fatorial() {                                               // function 
     let fatorial = document.getElementById('CaixaTexto').value;
     let inicio = new Date().getTime();
  
-    let fat = document.getElementById('fatorial');
-    let number = Number(fat.value);
+    let fat = document.getElementById('fatorial');s
+    
     let result = 1;
-     
-    for (i = 1; i <= number; i++) {
+    //logica para verificar o calculo
+    for (i = 1; i <= fatorial; i++) {
         result = result * i;
     }
  
     let fim = new Date().getTime();
-    document.write(`${number}! = ${result} - durou ${fim - inicio} milisegundos`)
+    resultado.innerHTML = (`${fatorial}! = ${result} - durou ${fim - inicio} milisegundos`)
  
 }
  

@@ -1,10 +1,11 @@
-let q1 = document.getElementById('q1');
-let inputMinimo = document.createElement("input");
+let q1 = document.getElementById('q1');									   // referenciando o documento HTML manipulado
+
+let inputMinimo = document.createElement("input");				           // criando elemento <input></input>
 let inputMaximo = document.createElement("input");
 let botao = document.createElement("button");
 let lista = document.createElement("ul");
 
-inputMinimo.setAttribute("id", "minimo")
+inputMinimo.setAttribute("id", "minimo")							       // setando atributo do elemento <input id="id" name="CaixaTexto"></input>
 inputMaximo.setAttribute("id", "maximo")
 inputMinimo.setAttribute("id", "minimo")
 inputMaximo.setAttribute("type", "number")
@@ -15,18 +16,18 @@ botao.innerHTML = "Calcular";
 botao.setAttribute("type", "submit")
 lista.setAttribute("id", "ul")
 
-q1.appendChild(inputMinimo)
+q1.appendChild(inputMinimo)											        // recebendo os elementos como parametro para instaciar na tela
 q1.appendChild(inputMaximo)
 q1.appendChild(botao)
 q1.appendChild(lista)
 
 
-let button = document.getElementById('button');
+let button = document.getElementById('button');								// manipulando o elemento	
 
-button.addEventListener('click', function () { multiplosDeDoisETres() });
+button.addEventListener('click', function () { multiplosDeDoisETres() });	// ao clicar no elemnto aciona a função
 
 
-function multiplosDeDoisETres() {
+function multiplosDeDoisETres() {										    // function aciona ao clicar no button2.addEventListener
 
 	let minimo = document.getElementById('minimo').value;
 	let maximo = document.getElementById('maximo').value; 
